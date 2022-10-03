@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0; padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: #12c2e9; 
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed,
+    #12c2e9); 
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); 
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+/* nav menu and content home */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    box-shadow: 1px 1px 1px 1px white;
+}
+
+nav h1{
+    font-size: 30px;
+}
+
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: white;
+}
+
+nav ul li a:hover::after{
+    content: "";
+    display: block;
+    border-bottom: 3px solid silver;
+    width: 40px;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -10px;
+}
+
+header {
+    text-align: left;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.contentbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tulisan {
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.gambar{
+    width: 550px;
+    height: 550px;
+}
+
+/* nav menu and content home ends */
+
+/* content gallery start */
+.glb{
+    padding-top: 100px;
+    max-width: 75%;
+    margin: auto;
+    display: flex;
+    padding-bottom: 100px;
+    align-content: center;
+}
+.card img {
+    width: 280px;
+    height: 200px;
+    margin: 8px;
+    border: 10px solid white;
+    border-radius: 15px;
+    box-shadow: 10px -10px 5px rgba(0, 0, 0, .4);
+}
+/* content gallery ends */
+
+/* content antariksawan start */
+
+.gtr{
+    max-width: 75%;
+    margin: auto;
+}
+
+.card-gtr{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 90px;
+}
+
+.card-gtr .foto img{
+    width: 400px;
+    height: 320px;
+    border-radius: 10px;
+    box-shadow: -10px -10px 5px rgba(0, 0, 0, .4);
+    border: 10px solid white;
+}
+
+.text{
+    padding-left: 20px;
+}
+
+.text h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.text p{
+    font-size: 20px;
+}
+
+/* content antariksawan ends */
+
+/* content gallery gerak star */
+.gbh{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.noid{
+    background: white;
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 10px solid white;
+    box-shadow: -10px -10px 5px rgba(0, 0, 0, .4);
+}
+
+.card-noid{
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.dark1{
+    background-image: url("../assest/antariksawan/373px-VladimirRemek.jpg");
+}
+
+.dark2{
+    background-image: url("../assest/antariksawan/384px-Alexei_Leonov.jpg");
+}
+
+.dark3{
+    background: url("../assest/antariksawan/384px-Neil_Armstrong_pose.jpg");
+}
+
+.dark4{
+    background-image: url("../assest/antariksawan/475px-RIAN_archive_612748_Valentina_Tereshkova.jpg");
+}
+.noid:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+/* content gallery gerak ends */
